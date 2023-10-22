@@ -4,7 +4,7 @@ const productSlice = createSlice({
     name: 'product',
     initialState: [],
     reducers: {
-        addProduct: (state,action) => {
+        addProduct: (state, action) => {
             let productToAdd = action.payload;
             productToAdd.map((prod)=>{
                 state.push(prod);
